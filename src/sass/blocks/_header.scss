@@ -1,34 +1,35 @@
-.header {
+.header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    &__logo {
+    align-items:  center;
+    &__logo{
         width: 250px;
-        img {
+        img{
             width: 100%;
         }
     }
-    &__official {
-        color: #ffffff;
-        font-size: 12px;
+    &__official{
         font-weight: 500;
+        font-size: 12px;
         text-align: center;
-        span {
+        color: #fff;
+        span{
             display: block;
             font-size: 18px;
         }
     }
-    &__phone {
+    &__phone{
         display: block;
-        color: #ffffff;
-        font-size: 18px;
         font-weight: 700;
-        &:hover {
+        font-size: 18px;
+        text-align: right;
+        color: #fff;
+        &:hover{
             color: #fff;
             text-decoration: none;
         }
     }
-    &__contacts {
+    &__contacts{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
