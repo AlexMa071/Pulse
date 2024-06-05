@@ -9,20 +9,39 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+
     &_main{
         width: 300px;
         height: 50px;
         font-size: 16px;
-        margin-top: 67px;
+        margin-top: 67px;       
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            background-color:  #a20606;
+            border: none;
+        }
     }
     &_submit{
         width: 300px;
         height: 50px;
         font-size: 16px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            background-color:  #a20606;
+            border: none;
+        }
     }
     &_mini{
         width: 131px;
         height: 40px;
         font-size: 14px;
+        cursor: pointer;
+        transition: 0.5s all;
+        &:hover {
+            background-color:  #a20606;
+            border: none;
+        }
     }
 }

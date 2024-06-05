@@ -41,10 +41,18 @@
         display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        overflow: hidden; /* Чтобы скрывать содержимое, пока высота 0 */
+        opacity: 0;      /* Начальное состояние прозрачности */
+        max-height: 0;   /* Начальная высота для перехода */
+        transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Переходы для высоты и прозрачности */
+    
         &_active {
             display: flex;
+            max-height: 1000px; /* Достаточно большая высота для отображения контента, можно настроить */
+            opacity: 1;         /* Делает элемент видимым */
         }
     }
+    
     &-item {
         width: 300px;
         min-height: 440px;
